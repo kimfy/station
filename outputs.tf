@@ -14,6 +14,11 @@ output "workload_resource_group_name" {
   value = azurerm_resource_group.workload.name
 }
 
+output "applications" {
+  value = module.caf_applications
+}
+
 output "groups" {
   value = module.ad_groups
 }
+
